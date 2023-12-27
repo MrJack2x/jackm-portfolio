@@ -1,9 +1,45 @@
+import { useState } from "react";
 import { Link } from "react-scroll";
 import ContactImg from "../assets/contact.jpg";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  function handleChange(event) {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  }
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+      if (response.ok) {
+        console.log("Email sent successfully!");
+      } else {
+        console.log("Email failed to send.");
+      }
+    } catch (error) {
+      console.error("An unexpected error occurred:", error.message);
+    }
+  }
+
   return (
     <div name="contact" className="w-full lg:h-screen ">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -60,26 +96,16 @@ export default function Contact() {
           {/* right */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form action="">
-                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-                  <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Name</label>
-                    <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
-                      type="text"
-                      name="name"
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">
-                      Phone Number
-                    </label>
-                    <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
-                      type="text"
-                      name="phone"
-                    />
-                  </div>
+              <form onSubmit={handleSubmit}>
+                <div className="flex flex-col">
+                  <label className="uppercase text-sm py-2">Name</label>
+                  <input
+                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
@@ -87,6 +113,8 @@ export default function Contact() {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
                     name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -95,6 +123,8 @@ export default function Contact() {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
                     name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -103,6 +133,8 @@ export default function Contact() {
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows="10"
                     name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                   ></textarea>
                 </div>
                 <button className="w-full shadow-gray-400 text-[#fff] p-4 text-gray-100 mt-4">
