@@ -13,18 +13,14 @@ export default function About() {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            dignissimos sit repudiandae suscipit esse aspernatur blanditiis rem,
-            sint consectetur illo aliquam at laborum voluptatem accusamus
-            soluta, aliquid sapiente dolor maxime vero provident ut earum ipsa
-            nulla. Maiores reiciendis velit voluptatum.
-          </p>
-          <p className="py-2 text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            dignissimos sit repudiandae suscipit esse aspernatur blanditiis rem,
-            sint consectetur illo aliquam at laborum voluptatem accusamus
-            soluta, aliquid sapiente dolor maxime vero provident ut earum ipsa
-            nulla. Maiores reiciendis velit voluptatum.
+            I am a software engineer based in the United States. I am currently
+            pursuing a Bachelor&#39;s degree in Computer Science in my first
+            year of college. I have a passion for creating different things and
+            problem-solving. Throughout my life, mathematics has always been
+            something I was fairly good with, and enjoyed the problem-solving
+            aspect of it. I have always been interested in technology and how it
+            works, and I want to take this passion and use it to create software
+            that will benefit the world.
           </p>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 mt-4 hover:scale-105 ease-in duration-300">
