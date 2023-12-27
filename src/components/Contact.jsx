@@ -19,7 +19,7 @@ export default function Contact() {
   async function handleSubmit(event) {
     event.preventDefault();
     try {
-      const response = await fetch("/api/sendEmail", {
+      const response = await fetch("/api/sendEmail.js", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -137,7 +137,10 @@ export default function Contact() {
                     onChange={handleChange}
                   ></textarea>
                 </div>
-                <button className="w-full shadow-gray-400 text-[#fff] p-4 text-gray-100 mt-4">
+                <button
+                  type="submit"
+                  className="w-full shadow-gray-400 text-[#fff] p-4 text-gray-100 mt-4"
+                >
                   Let&#39;s Connect
                 </button>
               </form>
