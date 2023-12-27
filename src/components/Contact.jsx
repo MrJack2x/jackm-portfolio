@@ -137,10 +137,7 @@ export default function Contact() {
                     onChange={handleChange}
                   ></textarea>
                 </div>
-                <button
-                  type="submit"
-                  className="w-full shadow-gray-400 text-[#fff] p-4 text-gray-100 mt-4"
-                >
+                <button className="w-full shadow-gray-400 text-[#fff] p-4 text-gray-100 mt-4">
                   Let&#39;s Connect
                 </button>
               </form>
