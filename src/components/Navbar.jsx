@@ -111,31 +111,46 @@ export default function Navbar() {
           </p>
           <nav>
             <ul className="uppercase">
-              <li onClick={toggleNav} className="py-4 text-sm cursor-pointer">
-                <Link to="hero" smooth={true} duration={300}>
+              <Link to="hero" smooth={true} duration={300}>
+                <li
+                  onClick={() => setNavOpen(false)}
+                  className="py-4 text-sm cursor-pointer"
+                >
                   Home
-                </Link>
-              </li>
-              <li onClick={toggleNav} className="py-4 text-sm cursor-pointer">
-                <Link to="about" smooth={true} duration={300}>
+                </li>
+              </Link>
+              <Link to="about" smooth={true} duration={300}>
+                <li
+                  onClick={() => setNavOpen(false)}
+                  className="py-4 text-sm cursor-pointer"
+                >
                   About
-                </Link>
-              </li>
-              <li onClick={toggleNav} className="py-4 text-sm cursor-pointer">
-                <Link to="skills" smooth={true} duration={300}>
+                </li>
+              </Link>
+              <Link to="skills" smooth={true} duration={300}>
+                <li
+                  onClick={() => setNavOpen(false)}
+                  className="py-4 text-sm cursor-pointer"
+                >
                   Skills
-                </Link>
-              </li>
-              <li onClick={toggleNav} className="py-4 text-sm cursor-pointer">
-                <Link to="projects" smooth={true} duration={300}>
+                </li>
+              </Link>
+              <Link to="projects" smooth={true} duration={300}>
+                <li
+                  onClick={() => setNavOpen(false)}
+                  className="py-4 text-sm cursor-pointer"
+                >
                   Projects
-                </Link>
-              </li>
-              <li onClick={toggleNav} className="py-4 text-sm cursor-pointer">
-                <Link to="contact" smooth={true} duration={300}>
+                </li>
+              </Link>
+              <Link to="contact" smooth={true} duration={300}>
+                <li
+                  onClick={() => setNavOpen(false)}
+                  className="py-4 text-sm cursor-pointer"
+                >
                   Contact
-                </Link>
-              </li>
+                </li>
+              </Link>
             </ul>
             <div className="py-10">
               <p className="uppercase tracking-widest text-[#5651e5]">
