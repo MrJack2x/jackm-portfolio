@@ -15,7 +15,7 @@ export default function Navbar() {
     <div className="fixed z-100 w-full">
       {/* Primary Navigation */}
       <div className="flex justify-between bg-[#ecf0f3] px-8 py-4 w-full shadow-md">
-        <div className="flex justify-start items-center space-x-4">
+        <div className="flex justify-start items-center space-x-4 cursor-pointer">
           <Link to="hero" smooth={true} duration={500}>
             <img
               src={Logo}
