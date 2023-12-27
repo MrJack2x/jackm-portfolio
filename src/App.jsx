@@ -1,10 +1,9 @@
-function App() {
+import Navbar from "./components/Navbar";
+
+export default function App() {
   return (
     <>
-      <img src="/icon.png" alt="" width="50px" />
-      <h1 className="text-[#5651e5]">My Portfolio</h1>
+      <Navbar />
     </>
   );
 }
-
-export default App;
