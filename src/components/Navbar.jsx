@@ -48,17 +48,7 @@ export default function Navbar() {
             </li>
             <li className="cursor-pointer uppercase text-sm hover:text-primary duration-300">
               <Link
-                to="projects"
-                smooth={true}
-                duration={500}
-                onClick={toggleNav}
-              >
-                Projects
-              </Link>
-            </li>
-            <li className="cursor-pointer uppercase text-sm hover:text-primary duration-300">
-              <Link
-                to="Contact"
+                to="contact"
                 smooth={true}
                 duration={500}
                 onClick={toggleNav}
@@ -133,14 +123,6 @@ export default function Navbar() {
                   className="py-4 text-sm cursor-pointer"
                 >
                   Skills
-                </li>
-              </Link>
-              <Link to="projects" smooth={true} duration={300}>
-                <li
-                  onClick={() => setNavOpen(false)}
-                  className="py-4 text-sm cursor-pointer"
-                >
-                  Projects
                 </li>
               </Link>
               <Link to="contact" smooth={true} duration={300}>
