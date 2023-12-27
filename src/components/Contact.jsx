@@ -30,7 +30,7 @@ export default function Contact() {
                   </p>
                 </div>
                 <div>
-                  <p className="uppercase text-center pt-8 text-[#5651e5]">
+                  <p className="uppercase text-center pt-8 text-primary">
                     Connect With Me
                   </p>
                   <div className="flex items-center justify-evenly py-4">
@@ -108,10 +108,7 @@ export default function Contact() {
           <Link to="hero" smooth={true} duration={300}>
             <div>
               <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <HiOutlineChevronDoubleUp
-                  className="text-[#5651e5]"
-                  size={30}
-                />
+                <HiOutlineChevronDoubleUp className="text-primary" size={30} />
               </div>
             </div>
           </Link>
