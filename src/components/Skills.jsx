@@ -1,6 +1,6 @@
 import HTML from "../assets/skills/html.png";
 import CSS from "../assets/skills/css.png";
-import JavaScript from "../assets/skills/javascript.png";
+import Node from "../assets/skills/node.png";
 import ReactImg from "../assets/skills/react.png";
 import GitHub from "../assets/skills/github.png";
 import Tailwind from "../assets/skills/tailwind.png";
@@ -37,15 +37,10 @@ export default function Skills() {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img
-                  src={JavaScript}
-                  width="64px"
-                  height="64px"
-                  alt="JavaScript"
-                />
+                <img src={Node} width="64px" height="64px" alt="JavaScript" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>JavaScript</h3>
+                <h3>Node.js</h3>
               </div>
             </div>
           </div>
