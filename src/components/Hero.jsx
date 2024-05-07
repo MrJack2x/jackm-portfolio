@@ -13,7 +13,7 @@ export default function Home() {
           <h1 className="py-4 text-gray-700">
             Hello, I&#39;m <span className="text-[#5651e5]">Jack</span>
           </h1>
-          <h1 className="py-2 text-gray-700">A Software Engineer</h1>
+          <h1 className="py-2 text-gray-700">An Aspiring Software Engineer</h1>
           <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
             I am dedicated to learning emerging technologies and developing
             solutions that address practical issues in the real world.
