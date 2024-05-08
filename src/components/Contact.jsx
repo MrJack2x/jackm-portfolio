@@ -24,7 +24,7 @@ export default function Contact() {
                 />
                 <div>
                   <h2 className="py-2">Jack Michell</h2>
-                  <p>Aspiring Software Engineer</p>
+                  <p>Software Engineer</p>
                   <p className="py-4">
                     I am currently taking commissions. Contact me and let&#39;s
                     connect.
