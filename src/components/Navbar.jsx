@@ -150,7 +150,7 @@ export default function Navbar() {
                   </div>
                 </a>
                 <a
-                  href="https://github.com/MrJack2x"
+                  href="https://github.com/jrmichell"
                   target="_blank"
                   rel="noreferrer"
                 >
