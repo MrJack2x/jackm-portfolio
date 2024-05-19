@@ -38,6 +38,16 @@ export default function Navbar() {
             </li>
             <li className="cursor-pointer uppercase text-sm hover:text-primary duration-300">
               <Link
+                to="portfolio"
+                smooth={true}
+                duration={500}
+                onClick={toggleNav}
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li className="cursor-pointer uppercase text-sm hover:text-primary duration-300">
+              <Link
                 to="skills"
                 smooth={true}
                 duration={500}
@@ -115,6 +125,14 @@ export default function Navbar() {
                   className="py-4 text-sm cursor-pointer"
                 >
                   About
+                </li>
+              </Link>
+              <Link to="portfolio" smooth={true} duration={300}>
+                <li
+                  onClick={() => setNavOpen(false)}
+                  className="py-4 text-sm cursor-pointer"
+                >
+                  Portfolio
                 </li>
               </Link>
               <Link to="skills" smooth={true} duration={300}>
